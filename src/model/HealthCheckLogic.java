@@ -7,6 +7,7 @@ public class HealthCheckLogic {
 		double weight = health.getWeight();
 		double height = health.getHeight();
 		double bmi = weight / (height / 100.0 * height / 100.0);
+		health.setBmi(bmi);
 
 		String bodyType;
 		if(bmi < 18.5) {
